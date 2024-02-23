@@ -24,31 +24,36 @@ RegisterNumber: 212223240033
 ```
 import numpy as np
 import matplotlib.pyplot as plt
+graph_name = "Fitline Graph"
 X=np.array(eval(input()))
 Y=np.array(eval(input()))
+print("X=",X)
+print("Y=",Y)
 X_mean=np.mean(X)
-print(X_mean)
+print("Mean of X =",X_mean)
 Y_mean=np.mean(Y)
-print(Y_mean)
+print("Mean of Y =",Y_mean)
 num=0
 denum=0
 for i in range(len(X)):
   num+=(X[i]-X_mean)*(Y[i]-Y_mean)
   denum+=(X[i]-X_mean)**2
 m=num/denum
-print(m)
+print("m=",m)
 b=Y_mean - m*X_mean
-print(Mean of X='',b)
+print("b=",b)
 Y_pred=m*X+b
-print(Y_pred)
+print("Predicted Value=",Y_pred)
 plt.scatter(X,Y,color='green')
 plt.plot(X,Y_pred,color='black')
+plt.text(0.1, 0.9, f'Output: {graph_name}', transform=plt.gca().transAxes)
 plt.show()
-
+  
 ```
 
 ## Output:
 ![best fit line](fitline.jpg)
+![best fit line](output.jpg)
 
 
 ## Result:
