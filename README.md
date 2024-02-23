@@ -38,7 +38,7 @@ for i in range(len(X)):
 m=num/denum
 print(m)
 b=Y_mean - m*X_mean
-print(b)
+print(Mean of X='',b)
 Y_pred=m*X+b
 print(Y_pred)
 plt.scatter(X,Y,color='green')
