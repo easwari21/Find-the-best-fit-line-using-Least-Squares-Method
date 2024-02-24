@@ -48,7 +48,7 @@ plt.scatter(X,Y,color='green')
 plt.plot(X,Y_pred,color='black')
 plt.text(0.1, 0.9, f'Output: {graph_name}', transform=plt.gca().transAxes)
 plt.show()
-  
+
 ```
 
 ## Output:
