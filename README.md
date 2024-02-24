@@ -52,7 +52,7 @@ plt.show()
 ```
 
 ## Output:
-![label](fitline.jpg)
+![label](graph.jpg)
 ![label](output.jpg)
 
 ## Result:
